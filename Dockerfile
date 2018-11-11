@@ -3,6 +3,7 @@ FROM alpine:3.7
 ENV ALPINE_VERSION=3.7
 
 RUN apk add --update alpine-sdk bash jq python py-pip
+RUN apk add build-base
 RUN pip install --upgrade pip
 RUN pip install awscli httpie
 
